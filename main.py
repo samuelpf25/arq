@@ -50,10 +50,10 @@ selecionado = st.selectbox('Nº da solicitação:',n_solicitacao)
 n=n_solicitacao.index(selecionado)
 
 #apresentar dados da solicitação
-padrao='<p style="font-family:Courier; color:Blue; font-size: 15px;"'
-infor='<p style="font-family:Courier; color:Blue; font-size: 15px;"'
-info2='<p style="font-family:Courier; color:Red; font-size: 15px;"'
-titulo='<p style="font-family:Courier; color:Blue; font-size: 20px;"'
+padrao='<p style="font-family:Courier; color:Blue; font-size: 20px;"'
+infor='<p style="font-family:Courier; color:Blue; font-size: 20px;"'
+info2='<p style="font-family:Courier; color:Red; font-size: 20px;"'
+titulo='<p style="font-family:Courier; color:Blue; font-size: 25px;"'
 st.markdown(titulo+'<b>Dados da Solicitação</b></p>',unsafe_allow_html=True)
 #st.text('<p style="font-family:Courier; color:Blue; font-size: 20px;">Nome: '+ nome[n]+'</p>',unsafe_allow_html=True)
 
