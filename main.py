@@ -1,15 +1,5 @@
-from datetime import datetime
-from time import sleep
-
-import easygui as easygui
-from docx import Document
-import win32com.client as client
-import os
-import sys
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
-from pprint import pprint
-from progress.bar import Bar
 import streamlit as st
 
 #https://pt.linkedin.com/pulse/manipulando-planilhas-do-google-usando-python-renan-pessoa
