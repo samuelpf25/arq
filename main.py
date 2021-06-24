@@ -54,15 +54,15 @@ padrao='<p style="font-family:Courier; color:Blue; font-size: 20px;"'
 infor='<p style="font-family:Courier; color:Blue; font-size: 20px;"'
 info2='<p style="font-family:Courier; color:Red; font-size: 20px;"'
 titulo='<p style="font-family:Courier; color:Blue; font-size: 25px;"'
-st.markdown(titulo+'<b>Dados da Solicitação</b></p>',unsafe_allow_html=True)
+st.markdown(titulo+'<strong>Dados da Solicitação</strong></p>',unsafe_allow_html=True)
 #st.text('<p style="font-family:Courier; color:Blue; font-size: 20px;">Nome: '+ nome[n]+'</p>',unsafe_allow_html=True)
 
-st.markdown(padrao+'<b>Nome</b>: '+ str(nome[n])+'</p>',unsafe_allow_html=True)
-st.markdown(padrao+'<b>Telefone</b>: '+ str(telefone[n])+'</p>',unsafe_allow_html=True)
-st.markdown(padrao+'<b>Prédio</b>: '+ str(predio[n])+'</p>',unsafe_allow_html=True)
-st.markdown(padrao+'<b>Sala</b>: '+ str(sala[n])+'</p>',unsafe_allow_html=True)
-st.markdown(padrao+'<b>Data</b>: '+ str(data[n])+'</p>',unsafe_allow_html=True)
-st.markdown(padrao+'<b>Descrição</b>: '+ observacao[n]+'</p>',unsafe_allow_html=True)
+st.markdown(padrao+'<strong>Nome</strong>: '+ str(nome[n])+'</p>',unsafe_allow_html=True)
+st.markdown(padrao+'<strong>Telefone</strong>: '+ str(telefone[n])+'</p>',unsafe_allow_html=True)
+st.markdown(padrao+'<strong>Prédio</strong>: '+ str(predio[n])+'</p>',unsafe_allow_html=True)
+st.markdown(padrao+'<strong>Sala</strong>: '+ str(sala[n])+'</p>',unsafe_allow_html=True)
+st.markdown(padrao+'<strong>Data</strong>: '+ str(data[n])+'</p>',unsafe_allow_html=True)
+st.markdown(padrao+'<strong>Descrição</strong>: '+ observacao[n]+'</p>',unsafe_allow_html=True)
 
 status=st.selectbox('Selecione o Status',['Selecionar','Ciente','Não é possível atender'])
 print(status)
