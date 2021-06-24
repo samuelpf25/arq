@@ -64,9 +64,11 @@ st.markdown(padrao+'<strong>Sala</strong>: '+ str(sala[n])+'</p>',unsafe_allow_h
 st.markdown(padrao+'<strong>Data</strong>: '+ str(data[n])+'</p>',unsafe_allow_html=True)
 st.markdown(padrao+'<strong>Descrição</strong>: '+ observacao[n]+'</p>',unsafe_allow_html=True)
 
-status=st.selectbox('Selecione o Status',['Selecionar','Ciente','Não é possível atender'])
-print(status)
+#status=st.selectbox('Selecione o Status',['Selecionar','Ciente','Não é possível atender'])
+#print(status)
 celula = sheet.find(n_solicitacao[n])
+status=st.radio('Selecione o status:',['-','Ciente','Não é possível atender'])
+#npossivel=st.radio('Não é possível atender')
 
 if (status=='Ciente'):
     #print('Selecionou ciente')
@@ -77,8 +79,6 @@ elif(status=='Não é possível atender'):
     #st.markdown(infor + 'Status alterado para ' + status + '</p>', unsafe_allow_html=True)
     st.text('Status alterado para ' + status)
     sheet.update_acell('R'+str(celula.row),'FALSO')
-        #listinha.append([dic['item'],dic['atividade'],dic['descrição do termo de adesão'],dic['descrição de trabalho realizado'],str(dic['tempo / dia (min)']),dic['comprovação (se houver)'],dic['data início'],dic['data fim']])
-        #datando.append(dic['data início'])
 #print(listinha[-1])
 #listinha.append(listinha[-1])
 # dataEscolhida=easygui.choicebox("Depois de que data deseja gerar o relatório?","Escolha a data",datando,0)
