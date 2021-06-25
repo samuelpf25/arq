@@ -1,3 +1,6 @@
+import gspread
+from oauth2client.service_account import ServiceAccountCredentials
+import streamlit as st
 import pandas as pd
 
 #https://pt.linkedin.com/pulse/manipulando-planilhas-do-google-usando-python-renan-pessoa
